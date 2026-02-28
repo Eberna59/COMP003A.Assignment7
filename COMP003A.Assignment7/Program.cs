@@ -25,7 +25,17 @@
                 string input = Console.ReadLine();
 
                 int choice = 0;
-            }
+
+                try
+                {
+                    choice = int.Parse(input);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine(" Invalid. Please enter a number between 1 and 4.");
+                }
+
+
         }
     }
 }
