@@ -49,7 +49,7 @@
                     {
                         int total = 0;
 
-                        for (int i = 0; i <= studentScores.Count; i++)
+                        for (int i = 0; i < studentScores.Count; i++)
                         {
                             total += studentScores[i];
                         }
@@ -60,7 +60,7 @@
                     {
                         int total = 0;
 
-                        for (int i = 0; i <= studentScores.Count; i++)
+                        for (int i = 0; i < studentScores.Count; i++)
                         {
                             total += studentScores[i];
                         }
