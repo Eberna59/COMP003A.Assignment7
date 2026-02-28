@@ -13,7 +13,8 @@
 
             bool running = true;
 
-            while (running)
+            // Keeps loop showing
+            while (running)         
             {
                 Console.WriteLine("\nStudent Score ");
                 Console.WriteLine("1. Display Score ");
@@ -26,6 +27,7 @@
 
                 int choice = 0;
 
+                // try catch stops it from crashing
                 try
                 {
                     choice = int.Parse(input);
@@ -35,6 +37,7 @@
                     Console.WriteLine(" Invalid. Please enter a number between 1 and 4.");
                 }
 
+                // makes sure number is valid
                 if (choice >= 1 && choice <= 4)
                 {
                     if (choice == 1)
