@@ -13,7 +13,19 @@
 
             bool running = true;
 
+            while (running)
+            {
+                Console.WriteLine("\nStudent Score ");
+                Console.WriteLine("1. Display Score ");
+                Console.WriteLine("2. Show Total ");
+                Console.WriteLine("3. Show Average ");
+                Console.WriteLine("4. Exit ");
+                Console.Write("Enter Choice: ");
 
+                string input = Console.ReadLine();
+
+                int choice = 0;
+            }
         }
     }
 }
