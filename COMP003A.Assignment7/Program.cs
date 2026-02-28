@@ -6,7 +6,7 @@
         {
             /*
              * Theme A: Student Score Analyzer
-             * 
+             *  keeps track of students progress
              */
 
             List<int> studentScores = new List<int> { 99, 85, 59, 93, 87 };
@@ -63,7 +63,7 @@
                     {
                         int total = 0;
 
-                        for (int i = 0; i < studentScores.Count; i++)
+                        for (int i = 0; i < studentScores.Count; i++) // i had to debug here i had added an = which gave me an error when i ran the code
                         {
                             total += studentScores[i];
                         }
