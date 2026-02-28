@@ -35,7 +35,57 @@
                     Console.WriteLine(" Invalid. Please enter a number between 1 and 4.");
                 }
 
+                if (choice >= 1 && choice <= 4)
+                {
+                    if (choice == 1)
+                    {
+                        Console.WriteLine("\nScores: ");
+                        foreach (int score in studentScores)
+                        {
+                            Console.WriteLine(score);
+                        }
+                    }
+                    else if (choice == 2)
+                    {
+                        int total = 0;
 
+                        for (int i = 0; i <= studentScores.Count; i++)
+                        {
+                            total += studentScores[i];
+                        }
+
+                        Console.WriteLine("\nTotal: " + total);
+                    }
+                    else if (choice == 3)
+                    {
+                        int total = 0;
+
+                        for (int i = 0; i <= studentScores.Count; i++)
+                        {
+                            total += studentScores[i];
+                        }
+
+                        double average = (double)total / studentScores.Count;
+
+                        Console.WriteLine("\nAverage: " + average);
+
+                    }
+                    else if (choice == 4)
+                    {
+                        running = false;
+                        Console.WriteLine("\nProgram ended.");
+                    }
+
+                }
+                else
+                {
+                    if (choice != 0)
+                    {
+                        Console.WriteLine("Please choose a number from 1 to 4.");
+                    }
+                }
+            }
         }
+
     }
 }
